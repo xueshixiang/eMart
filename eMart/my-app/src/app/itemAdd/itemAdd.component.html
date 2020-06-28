@@ -1,0 +1,109 @@
+<div style="padding: 100px 100px;">
+  <form class="bs-example bs-example-form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)"  role="form" novalidate>
+    <div>
+      <div class="row">
+        <div class="col-md-3"><a [routerLink]="'/itemAdd'">Add Item</a></div>
+        <br>
+        <div class="col-md-3"><a [routerLink]="'/viewstock'">View Stock</a></div>
+        <br>
+        <div class="col-md-3"><a [routerLink]="'/report'">Reports</a></div>
+      </div>
+    </div>
+    <br>
+    <!-- bootstrap utilities/screenreaders   -->
+    <div class="row">
+      <div class="col-md-3"><label>Select Category:</label></div>
+      <div class="col-md-3">
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle" id="dropdownCategory" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">Apple</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">HUAWEI</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">XIAOMI</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">OPPO</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">VIVO</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">ONEPLUS</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">NOKIA</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">MEIZU</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><label>Select Subcategory:</label></div>
+      <div class="col-md-3">
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle" id="dropdownSubCategory" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><label>Item name:</label></div>
+      <div class="col-md-3"><input ngModel name="itemName" id="inputItemName" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div class="row">
+      <div class="col-md-3"><label>Price:</label></div>
+      <div class="col-md-3"><input ngModel name="price" type="text" id="inputPrice" class="form-control" style="width: 200px;"></div>
+    </div><br/>
+ 
+    <div class="row">
+      <div class="col-md-3"><label>No. of Stock Items:</label></div>
+      <div class="col-md-3"><input ngModel name="noOfStockItems" id="inputNoOfStockItems" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+ 
+    <div class="row">
+      <div class="col-md-3"><label>N/W Type:</label></div>
+      <div class="col-md-3"><input ngModel name="nwType" id="inputNwType" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div class="row">
+      <div class="col-md-3"><label>Memory Storage:</label></div>
+      <div class="col-md-3"><input ngModel name="memoryStorage" id="inputMemoryStorage" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div class="row">
+      <div class="col-md-3"><label>Screen Resolution:</label></div>
+      <div class="col-md-3"><input ngModel name="screenResolution" id="inputScreenResolution" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div class="row">
+      <div class="col-md-3"><label>Weight:</label></div>
+      <div class="col-md-3"><input ngModel name="weight" id="inputWeight" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div class="row">
+      <div class="col-md-3"><label>Width, Length:</label></div>
+      <div class="col-md-3"><input ngModel name="widthLength" id="inputWidthLength" class="form-control" type="text" style="width: 200px;"></div>
+    </div><br/>
+
+    <div>
+      <button class="btn btn-lg btn-primary" type="submit">Save&Sell Item</button>
+    </div>
+
+  </form>
+</div>
